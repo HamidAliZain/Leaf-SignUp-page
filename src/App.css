@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+
+}
+
+.image-section {
+  background-color: #E9F8E5;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageSecImg {
+  width: 800px;
+}
+
+.form-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-size: 40px;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+.form {
+  width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  outline: none;
+  border: none
+}
+
+.inputs {
+  display: flex;
+  height: 40px;
+  padding: 0px 20px;
+  border: 1px solid #c0baba;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+  gap: 2px;
+}
+
+.fonts {
+  width: 15px;
+  height: 15px;
+}
+
+.submitBtn {
+  background: #73895D;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #73895D;
+  color: white;
+  border-radius: 20px;
+
+}
+
+.or {
+  text-align: center;
+}
+
+.loginIconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.LoginIcon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c0baba;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.LoginIcon>img {
+  width: 30px;
+  height: 30px;
+}
+
+.login {
+  text-align: center;
+}
+
+
+.header {
+  margin-top: 22px;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  font-size: 34px;
+}
+
+@media only screen and (max-width: 1075px) {
+  .imageSecImg {
+    width: 400px;
+  }
+
+  .form {
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 731px) {
+  .imageSecImg {
+    width: 300px;
+  }
+
+  .form {
+    padding: 0x 20px;
+  }
+
+  .logo-text {
+    font-size: 25px;
+  }
+
+  .header {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .image-section {
+    width: 100%;
+    background-color: white;
+  }
+  .form-container{
+    width: 100%;
+   }
+
+
+  .imageSecImg {
+    width: 300px;
+  }
+
+  .form {
+    padding: 0x 20px;
+  }
+
+  .logo-text {
+    font-size: 25px;
+  }
+
+  .header {
+    font-size: 25px;
+  }
+}
